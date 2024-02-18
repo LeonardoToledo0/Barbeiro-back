@@ -23,7 +23,7 @@ class Cliente(AbstractBaseUser):
     email = models.EmailField(unique=True)
     telefone = models.CharField(max_length=15)  # Você pode ajustar o comprimento conforme necessário
     nome = models.CharField(max_length=100)
-    senha = models.CharField(max_length=128)
+    password = models.CharField(max_length=128)
     ultimas_compras = models.TextField(blank=True)
     is_active = models.BooleanField(default=True)
     is_staff = models.BooleanField(default=False)
